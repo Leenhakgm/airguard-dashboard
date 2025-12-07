@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Outfit', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,29 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        safe: {
+          DEFAULT: "hsl(var(--safe))",
+          foreground: "hsl(var(--safe-foreground))",
+        },
+        moderate: {
+          DEFAULT: "hsl(var(--moderate))",
+          foreground: "hsl(var(--moderate-foreground))",
+        },
+        unhealthy: {
+          DEFAULT: "hsl(var(--unhealthy))",
+          foreground: "hsl(var(--unhealthy-foreground))",
+        },
+        hazardous: {
+          DEFAULT: "hsl(var(--hazardous))",
+          foreground: "hsl(var(--hazardous-foreground))",
+        },
+        gas: {
+          nh3: "hsl(var(--gas-nh3))",
+          co2: "hsl(var(--gas-co2))",
+          ch4: "hsl(var(--gas-ch4))",
+          so2: "hsl(var(--gas-so2))",
+          pm25: "hsl(var(--gas-pm25))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +92,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
